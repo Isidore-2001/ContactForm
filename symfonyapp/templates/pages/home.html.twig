@@ -1,0 +1,69 @@
+{% extends "base.html.twig" %}
+ 
+{% block body %}
+{% for message in app.flashes('success') %}
+<div class="alert alert-success">
+{{message}}
+</div>
+
+{% endfor %} 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Efficience It</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container h-100">
+    <div class="row col-12 align-self-center h-100">
+        <div class="col-12">
+    
+{{ form_start(form, {'attr': {'class': 'form-group row'}}) }}
+    
+    <div class="input-field col-sm-12">
+        {{ form_widget(form.nom, {'attr': {'placeholder': 'Votre nom'}}) }}
+        {{ form_label(form.nom, 'Nom') }}
+    </div>
+
+    <div class="input-field col-sm-12">
+        {{ form_widget(form.prenom, {'attr': {'placeholder': 'Votre Prénom'}}) }}
+        {{ form_label(form.prenom, 'Prenom') }}
+    </div>
+
+     <div class="input-field col-sm-12">
+        {{ form_widget(form.mail, {'attr': {'placeholder': 'Votre Mail'}}) }}
+        {{ form_label(form.mail, 'Mail') }}
+    </div>
+
+    <div class="input-field col-sm-6">
+        {{ form_widget(form.message, {'attr': {'class': 'form-control', 'placeholder': 'Votre message'}}) }}
+    </div>
+
+    
+
+    <div class="input-field col-sm-12">
+        <input type="submit" name="" value="Envoyer" class="btn btn-primary">
+    </div>
+{{ form_end(form) }}
+
+</div>
+</div>
+</div>
+{% endblock %}
+   
