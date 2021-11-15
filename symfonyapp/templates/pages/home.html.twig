@@ -1,13 +1,17 @@
 {% extends "base.html.twig" %}
  
 {% block body %}
+<br><style>{% include 'css/styles.css' %}</style><br>
+<br><style>{% include 'font-awesome/css/font-awesome.min.css' %}</style><br>
 {% for message in app.flashes('success') %}
 <div class="alert alert-success">
 {{message}}
 </div>
 
 {% endfor %} 
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Efficience It</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,32 +38,69 @@
     <div class="row col-12 align-self-center h-100">
         <div class="col-12">
     
-{{ form_start(form, {'attr': {'class': 'form-group row'}}) }}
-    
-    <div class="input-field col-sm-12">
-        {{ form_widget(form.nom, {'attr': {'placeholder': 'Votre nom'}}) }}
-        {{ form_label(form.nom, 'Nom') }}
-    </div>
-
-    <div class="input-field col-sm-12">
-        {{ form_widget(form.prenom, {'attr': {'placeholder': 'Votre Prénom'}}) }}
-        {{ form_label(form.prenom, 'Prenom') }}
-    </div>
-
-     <div class="input-field col-sm-12">
-        {{ form_widget(form.mail, {'attr': {'placeholder': 'Votre Mail'}}) }}
-        {{ form_label(form.mail, 'Mail') }}
-    </div>
-
-    <div class="input-field col-sm-6">
-        {{ form_widget(form.message, {'attr': {'class': 'form-control', 'placeholder': 'Votre message'}}) }}
-    </div>
-
-    
-
-    <div class="input-field col-sm-12">
-        <input type="submit" name="" value="Envoyer" class="btn btn-primary">
-    </div>
+    {{ form_start(form, {'attr': {'class': 'form-group row'}}) }}
+    <div class="form-hrader"></div>
+	  				<h4>Nous Joindre</h4>
+	  				<hr class="underline">
+	  				<div class="form-row">
+	  					<div class="col">
+	  						<div class="input-group">
+								<div class="input-group-prepend">
+								    <div class="input-group-text">
+		  					    	   <i class="fa fa-user"></i>
+								    </div>
+								</div>
+                    {{ form_widget(form.nom, {'attr': {'placeholder': 'Votre nom'}}) }}
+							</div>
+	  					</div>
+              <div class="col">
+	  						<div class="input-group">
+								<div class="input-group-prepend">
+								    <div class="input-group-text">
+		  					    	   <i class="fa fa-user"></i>
+								    </div>
+								</div>
+                    {{ form_widget(form.prenom, {'attr': {'placeholder': 'Votre Prenom'}}) }}
+							</div>
+	  					</div>
+              <div class="col">
+	  						<div class="input-group">
+								<div class="input-group-prepend">
+								    <div class="input-group-text">
+		  					    	   <i class="fa fa-user"></i>
+								    </div>
+								</div>
+                    {{ form_widget(form.Departement, {'attr': {'placeholder': 'Sélectionner le Département'}}) }}
+							</div>
+	  					</div>
+	  					<div class="col">
+	  						<div class="input-group">
+								<div class="input-group-prepend">
+								    <div class="input-group-text">
+		  					    	   <i class="fa fa-envelope"></i>
+								    </div>
+								</div>
+						       {{ form_widget(form.mail, {'attr': {'placeholder': 'Votre Mail'}}) }}
+							</div>
+	  					</div>
+	  				</div>
+	  				
+	  				<div class="form-row">
+	  					<div class="col">
+	  						<div class="input-group">
+								<div class="input-group-prepend textarea">
+								    <div class="input-group-text">
+		  					    	   <i class="fa fa-file"></i>
+								    </div>
+								</div>
+	  						    {{ form_widget(form.message, {'attr': {'class': 'form-control', 'placeholder': 'Votre message'}}) }}
+							</div>
+							<div class="">
+	  						    <button class="btn"><i class="fa fa-send"></i>ENVOYER</button>
+							</div>
+	  					</div>
+	  				</div>
+	  		
 {{ form_end(form) }}
 
 </div>

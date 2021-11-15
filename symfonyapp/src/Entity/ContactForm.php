@@ -2,7 +2,10 @@
 
 namespace App\Entity;
 
+
 use App\Repository\ContactFormRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -36,6 +39,18 @@ class ContactForm
      * @ORM\Column(type="text")
      */
     private $message;
+
+
+    /**
+     * @ORM\OneToMany(targetEntity=Departement::class, mappedBy="id")
+     */
+    private $departement;
+
+    public function __construct()
+    {
+        $this->departement = new ArrayCollection();
+    }
+
 
     public function getId(): ?int
     {
@@ -89,4 +104,35 @@ class ContactForm
 
         return $this;
     }
+
+    /**
+     * @return Collection|Departement[]
+     */
+    public function getDepartement(): Collection
+    {
+        return $this->departement;
+    }
+
+    public function addDepartement(Departement $departement): self
+    {
+        if (!$this->departement->contains($departement)) {
+            $this->departement[] = $departement;
+            //$departement->setNom($this->getNom());
+        }
+
+        return $this;
+    }
+
+    public function removeDepartement(Departement $departement): self
+    {
+        if ($this->departement->removeElement($departement)) {
+            // set the owning side to null (unless already changed)
+            if ($departement->getNom() === $this) {
+                $departement->setNom(null);
+            }
+        }
+
+        return $this;
+    }
+
 }

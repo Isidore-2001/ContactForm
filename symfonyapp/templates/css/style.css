@@ -1,0 +1,554 @@
+/*--- Style Entête ---*/
+	.nav-head{
+		background-color: #32C1CE;
+		font-size: 13px;
+		color: #fff;
+		padding: 10px 20px;
+		letter-spacing: .5px;
+	}
+	.nav-head p a{
+		font-size: 13px;
+		color: #fff;
+		text-decoration: none; 
+		outline: 0;
+		border-bottom: solid 1px #fff;
+	}
+	.nav-head p span{
+		font-size: 11px;
+		color: #EBECFD;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+	.nav-head p{
+		margin: 2px 0;
+	}
+	.nav-head .fa-fb{
+		border-bottom: none;
+	}
+	.nav-head .fa-fb .fa{
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		border-radius: 50%;
+		background-color: #fff;
+		color: #32C1CE;
+		text-align: center;
+		margin-right: 10px;
+		padding-left: 1px;
+	}
+	@media(min-width: 992px){
+		.nav-head .head-gram{ 
+			text-align: right;
+		}
+	}
+	@media(max-width: 991px){
+		.nav-head{
+			text-align: center;
+		}
+	}
+/*--- Style Entête ---*/
+
+/*--- Style général ---*/
+    .row{
+    	margin: 0 auto;
+    }
+	.forms-box{
+		padding: 8% 3%;
+		background-color: #f8f9fa;
+	}
+	.titre{
+		text-align: center;
+	}
+	.titre h4{
+		display: inline-block;
+		color: #555;
+		background-color: #e7e7e7;
+		border-bottom: solid 3px #999;
+		border-radius: 4px;
+		padding: 15px 8px;
+		font-size: 18px;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+	}
+	.form-control{
+		background-color: none;
+		border: 0px;
+	}
+	.form-control:focus, .btn:focus{
+		box-shadow: none;
+	}
+/*--- Style général ---*/
+
+/*--- Newsletter style_1 ---*/
+  /*--- news_1 ---*/
+     .news_1 form{
+     	border: solid 1px #ddd;
+     	padding: 40px;
+     	margin-bottom: 40px;
+     	background-color: #fff;
+     }
+     .news_1 form h5{
+     	font-size: 22px;
+     	font-weight: 700px;
+     	margin-bottom: 20px;
+     	color: #20c997;
+     }
+     .news_1 form p{
+     	color: #000 !important;
+     	font-size: 20px;
+     	letter-spacing: 0.25px;
+     }
+     .news_1 .underline{
+     	width: 50px;
+     	margin: 0 auto;
+     	height: 3px;
+     	border: none;
+     	background-color: #20c997;
+     }
+     .news_1 .form-row{
+     	margin-top: 30px;
+     }
+     .news_1 .form-control{
+     	background-color: #e7e7e7;
+     	padding: 30px 10px;
+     	margin-bottom: 10px;
+     	border-radius: 0px;
+     }
+     .news_1 .btn{
+     	background-color: #20c997;
+     	color: #fff;
+     	width: 100%;
+     	padding: 15px 10px;
+     	border-radius: 0;
+     	margin-bottom: 10px;
+     	font-weight: bold;
+     }
+     .news_1 span{
+     	font-size: 13px;
+     	color: #777;
+     }
+  /*--- news_1 ---*/
+
+  /*--- news_2 ---*/
+     .news_2 form{
+     	border: solid 1px #ddd;
+     	border-radius: 15px;
+     	padding: 40px;
+     	margin-bottom: 40px;
+     	background-color: #fff;
+     }
+     .news_2 form .form-content{
+     	padding: 40px 0 20px 0;
+     	border-top: solid 1px #eee;
+     	border-bottom: solid 1px #eee;
+     }
+     .news_2 form .form-control{
+     	background-color: #e7e7e7;
+     	border-radius: 30px;
+     	margin-bottom: 20px;
+     	padding: 30px;
+     }
+     .news_2 form .btn{
+     	background-color: #dc3545;
+     	color: #fff;
+     	width: 100%;
+     	padding: 15px;
+     	border-radius: 28px;
+     	letter-spacing: 0.10px;
+     	font-weight: bold;
+     }
+     .news_2 span{
+     	font-size: 13px;
+     	color: #777;
+     }
+
+  /*--- news_2 ---*/
+
+  /*--- news_3 ---*/
+     .news_3 form{
+     	  background-color: #6c757d;
+     	  border: solid 1px #6c757d;
+     	  margin: 20px 0;
+		  padding: 20px;
+		  border-radius: 8px;
+     }
+     .news_3 form h5{
+     	color: #fff;
+     	font-weight: bold;
+     	font-size: 20px;
+     	letter-spacing: 0.5px;
+     }
+     .news_3 form p{
+     	color: #e7e7e7;
+     	margin-top: 15px;
+     	font-size: 15px;
+     }
+     .news_3 form .input-group{
+     	background-color: #fff;
+     	padding: 8px;
+     	border-radius: 8px;
+     }
+     .news_3 form .form-control{
+     	margin-top: 2px;
+     }
+     .news_3 form .btn{
+     	background-color: #007bff;
+     	color: #fff;
+     	padding: 10px;
+     	font-size: 14px;
+     	font-weight: bold;
+     	letter-spacing: 0.5px;
+     	border-radius: 8px;
+     }
+  /*--- news_3 ---*/
+/*--- Newsletter style_1 ---*/
+
+
+/*--- Formulaire style_2 ---*/
+	.style_2{
+		margin: 40px 0;
+	}
+  /*--- news_4 ---*/
+    .news_4 form{
+    	background-color: #fff;
+	   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+	   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+	   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3); 
+	   border-radius: 20px;
+	   padding: 40px;
+	   margin: 20px 0;
+    }
+    .news_4 form .form-row{
+    	margin-bottom: 15px;
+    }
+    .news_4 form h4{
+    	font-size: 20px;
+    	color: #000 !important;
+    	margin-bottom: 10px;
+    }
+    .news_4 form p{
+    	color: #777;
+    	font-size: 14px;
+    	margin: 25px 0;
+    }
+    .news_4 form label{
+    	font-size: 13px;
+    	font-weight: bold;
+    	color: #000 !important;
+    	letter-spacing: 0.5px;
+    }
+    .news_4 form .underline{
+     	width: 40px;
+     	/*margin-left: -220px;*/
+     	height: 3px;
+     	border: none;
+     	background-color: #6610f2;
+    }
+    .news_4 form .form-control{
+    	border: solid 2px #eee;
+    	border-radius: 20px;
+    	height: 35px;
+    	padding: 10px;
+        font-size: 13px;
+        color: #777;
+    } 
+    .news_4 form textarea.form-control{
+    	border-radius: 15px;
+    	height: 120px;
+    	padding: 20px;
+    }
+    .news_4 form .btn{
+    	background-color: #6610f2;
+    	color: #fff;
+    	margin-top: 10px;
+    	border-radius: 15px;
+    	padding: 5px 20px;
+    	font-size: 14px;
+    	font-weight: bold;
+    	letter-spacing: 0.5px;
+    }
+  /*--- news_4 ---*/
+
+  /*--- news_5 ---*/
+   .news_5 form{
+  	    background-color: #fff;
+  	    border: solid 1px #ddd;
+        margin: 20px 0;
+        padding: 40px;
+   }
+   .news_5 form h4{
+   	    font-size: 20px;
+   }
+   .news_5 form .form-row{
+   	    margin: 30px 0;
+   }
+   .news_5 form .form-control{
+	   	border: solid 1px #ccc;
+	   	padding: 20px 5px;
+   	    font-size: 14px;
+   	    border-radius: 0;
+   	    color: #495057;
+   }
+   .news_5 form .form-control::placeholder{
+   	   text-transform: uppercase;
+   	   font-size: 12px;
+   	   letter-spacing: 0.5px;
+   }
+   .news_5 form .input-group-text{
+   	    border: solid 1px #ccc;
+   	    border-radius: 0;
+   }
+   .news_5 form textarea.form-control{
+   	   height: 200px;
+   }
+   .news_5 form .textarea .input-group-text{
+   	   align-items: start;
+   	   padding-top: 22px;
+   } 
+   .news_5 form .btn{
+   	   background-color: #17a2b8;
+   	   border: solid 1px rgba(255,255,255,0.3);
+   	   color: #fff;
+   	   margin-top: 20px;
+   	   border-radius: 0;
+   	   padding: 0 10px 0 0;
+   	   font-size: 12px;
+   	   font-weight: bold;
+   	   letter-spacing: 1px;
+   }  
+   .news_5 form .btn .fa{
+   	   background-color: rgba(255,255,255,0.3);
+   	   margin: 0;
+   	   padding: 10px;
+   	   margin-right: 10px;
+   }
+  /*--- news_5 ---*/
+
+  /*--- news_6 ---*/
+  .news_6 form{
+  	   background-color: #fff;
+  	   border: solid 1px #ddd;
+  	   border-top-color: transparent ;
+  	   border-radius: 10px;
+  	   margin: 20px 0;
+  }
+  .news_6 form .form-header{
+  	   height: 5px;
+  	    background: linear-gradient(-90deg, #dc3545, #ffc107);
+  	   border-radius: 10px 10px 0 0;
+  }
+  .news_6 form .form-content{
+  	   padding: 40px 30px
+  }
+  .news_6 form .form-content h4{
+	  	font-size: 16px;
+	  	font-weight: bold;
+	  	letter-spacing: 1px;
+	  	text-align: center;
+	  	margin-bottom: 30px;
+	  	text-transform: uppercase;
+  }
+  .news_6 form .form-content .form-control{
+	  	border-bottom: solid 1px #000;
+	  	margin-bottom: 20px;
+	  	border-radius: 0;
+	  	font-size: 14px;
+	  	padding-left: 0;
+  }
+  .news_6 form .form-content textarea.form-control{
+  	    height: 150px;
+  }
+  .news_6 form .form-content .btn{
+  	    background: linear-gradient(-90deg, #dc3545, #ffc107);
+  	    border-color: #fff;
+  	    color: #fff;
+  	    font-size: 15px;
+  	    font-weight: bold;
+  	    letter-spacing: 1px;
+  	    margin-top: 20px;
+  	    padding: 10px 15px;
+  	    transition-duration: 1s;
+  }
+  .news_6 form .form-content .btn:hover{
+  	    background: linear-gradient(-90deg, #ffc107, #dc3545);
+  }
+  /*--- news_6 ---*/
+/*--- Formulaire style_2 ---*/
+
+/*--- Formulaire style_3 ---*/
+  /*--- news_7 #4d306e #ff7149 #d2d2dd---*/
+  .news_7 form{
+	  	border: solid 2px #4d306e;
+	  	padding: 40px;
+	  	background-color: #fff;
+	  	margin: 40px 0;
+  }
+  .news_7 form .form-control{
+	  	border-radius: 0;
+	  	border-bottom: solid 1px #d2d2dd;
+	  	padding: 15px 0;
+	  	margin-bottom: 20px;
+	  	transition-duration: 0.5s;
+  }
+  .news_7 form .form-control:focus{
+  	border-bottom: solid 2px #4d306e;
+  }
+  .news_7 form .form-block{
+  	position: relative;
+  }
+  .news_7 form .form-block label{
+	  	font-weight: bold;
+	  	font-size: 14px;
+		position: relative;
+		top: 15px;
+		display: block;
+		opacity: 0;
+		-webkit-transition: top 0.5s ease,opacity 0.5s ease;
+	    -moz-transition: top 0.5s ease,opacity 0.5s ease;
+	    -ms-transition: top 0.5s ease,opacity 0.5s ease;
+	    transition: top 0.5s ease,opacity 0.5s ease;
+  }
+  .news_7 form .form-block-value label{
+  	    top: 0;
+	    opacity: 1;
+  }
+  .news_7 form .form-block-focus label{
+	  	color: #4d306e;
+  }
+  .news_7 form .btn{
+	  	background-color: #ff7149;
+	  	color: #fff;
+	  	border-radius: 0;
+	  	padding: 5px 20px;
+	  	transition-duration: 0.5s;
+  }
+  .news_7 form .btn:hover{
+  	    background-color: #ee6038;
+  }
+  .news_7 form textarea{
+  	height: 250px;
+  }
+  /*--- news_7 ---*/
+
+  /*--- news_8 ---*/
+  .news_8 form{
+	  	border: solid 2px #17a2b8;
+	  	padding: 40px 60px 40px  40px;
+	  	background-color: #fff;
+	  	margin: 40px 0;
+	  	border-radius: 15px;
+  }
+  .news_8 form .form-control{
+	  	border-radius: 0;
+	  	border-bottom: solid 1px #d2d2dd;
+	  	padding: 15px 0;
+	  	margin: 0 0 20px 33px;
+	  	transition-duration: 0.5s;
+  }
+  .news_8 form .form-control:focus{
+  	    border-bottom: solid 2px #17a2b8;
+  }
+  .news_8 form .fa{
+	  	background-color: #17a2b8;
+	  	color: #fff;
+	  	padding: 7px;
+	  	font-size: 13px;
+	  	border-radius: 5px;
+	  	position: relative;
+	  	top: 30px;
+  }
+  .news_8 form .form-block_1{
+	  	position: relative;
+	  	margin-right: 20px;
+  }
+  .news_8 form .form-block_1 label{
+	  	font-size: 14px;
+		position: relative;
+		top: 10px;
+		left: 35px;
+		display: block;
+		opacity: 0;
+		-webkit-transition: top 0.5s ease,opacity 0.5s ease;
+	    -moz-transition: top 0.5s ease,opacity 0.5s ease;
+	    -ms-transition: top 0.5s ease,opacity 0.5s ease;
+	    transition: top 0.5s ease,opacity 0.5s ease;
+  }
+  .news_8 form .form-block-value_1 label{
+  	    top: 3px;
+	    opacity: 1;
+  }
+  .news_8 form .form-block-focus_1 label{
+	  	color: #17a2b8;
+  }
+  .news_8 form textarea{
+  	    height: 150px;
+  }
+  .news_8 form .btn{
+	  	background-color: #17a2b8;
+	  	color: #fff;
+	  	border-radius: 0;
+	  	margin-top: 20px;
+	  	padding: 5px 20px;
+	  	transition-duration: 0.5s;
+	  	border-radius: 5px;
+  }
+  /*--- news_8 ---*/
+
+  /*--- news_9 ---*/
+  .news_9 form{
+	  	border: solid 2px #dc3545;
+	  	padding: 40px;
+	  	background-color: #fff;
+	  	margin: 40px 0;
+	  	border-radius: 15px;
+  }
+  .news_9 form .form-control{
+	  	border-radius: 0;
+	  	border: solid 1px #d2d2dd;
+	  	padding: 20px 0 20px 10px;
+	  	margin-bottom: 20px;
+	  	transition-duration: 0.5s;
+     	background-color: #f7f7f7;
+  }
+  .news_9 form .form-control:focus{
+  	    border: solid 1px #dc3545;
+  }
+  .news_9 form .form-block_2{
+	  	position: relative;
+  }
+  .news_9 form .form-block_2 label{
+	  	font-size: 14px;
+	  	font-weight: bold;
+		position: relative;
+		top: 10px;
+		display: block;
+		opacity: 0;
+		-webkit-transition: top 0.5s ease,opacity 0.5s ease;
+	    -moz-transition: top 0.5s ease,opacity 0.5s ease;
+	    -ms-transition: top 0.5s ease,opacity 0.5s ease;
+	    transition: top 0.5s ease,opacity 0.5s ease;
+  }
+  .news_9 form .form-block-value_2 label{
+  	    top: 3px;
+	    opacity: 1;
+  }
+  .news_9 form .form-block-focus_2 label{
+	  	color: #dc3545;
+  }
+  .news_9 form textarea{
+  	    height: 150px;
+  }
+  .news_9 form .btn{
+	  	background-color: #dc3545;
+	  	color: #fff;
+	  	border-radius: 0;
+	  	margin-top: 20px;
+	  	padding: 5px 20px;
+	  	transition-duration: 0.5s;
+	  	border-radius: 5px;
+	  	width: 100%;
+  }
+  /*--- news_9 ---*/
+/*--- Formulaire style_3 ---*/
+
+
