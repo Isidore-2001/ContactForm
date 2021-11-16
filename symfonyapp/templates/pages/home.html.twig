@@ -1,8 +1,7 @@
 {% extends "base.html.twig" %}
  
 {% block body %}
-<br><style>{% include 'css/styles.css' %}</style><br>
-<br><style>{% include 'font-awesome/css/font-awesome.min.css' %}</style><br>
+
 {% for message in app.flashes('success') %}
 <div class="alert alert-success">
 {{message}}
@@ -33,10 +32,8 @@
   </div>
 </nav>
 
-
-<div class="container h-100">
-    <div class="row col-12 align-self-center h-100">
-        <div class="col-12">
+<div class="row justify-content-center">
+<div class="col-12 col-lg-6 news_5">
     
     {{ form_start(form, {'attr': {'class': 'form-group row'}}) }}
     <div class="form-hrader"></div>
@@ -50,29 +47,20 @@
 		  					    	   <i class="fa fa-user"></i>
 								    </div>
 								</div>
-                    {{ form_widget(form.nom, {'attr': {'placeholder': 'Votre nom'}}) }}
+                    {{ form_widget(form.nom, {'attr': {'placeholder': 'Votre nom', 'class': 'form-control'}}) }}
 							</div>
 	  					</div>
-              <div class="col">
+                       <div class="col">
 	  						<div class="input-group">
 								<div class="input-group-prepend">
 								    <div class="input-group-text">
 		  					    	   <i class="fa fa-user"></i>
 								    </div>
 								</div>
-                    {{ form_widget(form.prenom, {'attr': {'placeholder': 'Votre Prenom'}}) }}
+                    {{ form_widget(form.prenom, {'attr': {'placeholder': 'Votre Prenom', 'class': 'form-control'}}) }}
 							</div>
 	  					</div>
-              <div class="col">
-	  						<div class="input-group">
-								<div class="input-group-prepend">
-								    <div class="input-group-text">
-		  					    	   <i class="fa fa-user"></i>
-								    </div>
-								</div>
-                    {{ form_widget(form.Departement, {'attr': {'placeholder': 'Sélectionner le Département'}}) }}
-							</div>
-	  					</div>
+                        
 	  					<div class="col">
 	  						<div class="input-group">
 								<div class="input-group-prepend">
@@ -80,10 +68,20 @@
 		  					    	   <i class="fa fa-envelope"></i>
 								    </div>
 								</div>
-						       {{ form_widget(form.mail, {'attr': {'placeholder': 'Votre Mail'}}) }}
+						       {{ form_widget(form.mail, {'attr': {'placeholder': 'Votre Mail', 'class': 'form-control'}}) }}
 							</div>
 	  					</div>
 	  				</div>
+					  <div class="col">
+	  						<div class="input-group">
+								<div class="input-group-prepend">
+								    <div class="input-group-text">
+		  					    	   <i class="fa fa-user"></i>
+								    </div>
+								</div>
+                                 {{ form_widget(form.Departement, {'attr': {'placeholder': 'Sélectionner le Département', 'class': 'form-control-plaintext'}}) }}
+							</div>
+	  					</div>
 	  				
 	  				<div class="form-row">
 	  					<div class="col">
@@ -103,7 +101,7 @@
 	  		
 {{ form_end(form) }}
 
-</div>
+
 </div>
 </div>
 {% endblock %}

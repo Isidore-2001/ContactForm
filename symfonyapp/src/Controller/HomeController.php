@@ -35,16 +35,13 @@ class HomeController extends AbstractController{
     {
 
         
-        $contact = new ContactForm();
-        $form = $this->createForm( ContactFormType::class, $contact);
-
-        //$request = Request::createFromGlobals();
-        
+        $contact = new ContactForm(); // Création d'un objet Formulaire
+        $form = $this->createForm( ContactFormType::class, $contact); // création du formulaire
         $contactForm = $form->handleRequest($request);
 
         
          
-        if($form->isSubmitted() && $form->isValid())
+        if($form->isSubmitted() && $form->isValid()) // Vérification si tout es ok
 {
             //dd($contactForm->getData());
             $message = (new \Swift_Message('new message'))
@@ -52,7 +49,7 @@ class HomeController extends AbstractController{
                 ->setTo($contactForm->get('Departement')->getData()->getEmail())
                 ->setBody(
                     $this->renderView(
-                        // templates/hello/email.txt.twig
+
                         'email/email.html.twig',
                         ['contact' => $contact]
                     ),
